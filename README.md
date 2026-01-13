@@ -1,6 +1,6 @@
 # VIS4ML Service
 
-Visualization for Machine Learning to Support Human-Centered Decision Making
+Visualization for Machine Learning
 
 ## Features
 
