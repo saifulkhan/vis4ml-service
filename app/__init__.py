@@ -32,7 +32,7 @@ def get_available_domain_routers() -> list[APIRouter]:
 
         # try to import the router from this domain
         try:
-            domain_module = importlib.import_module(f"app.domains.{domain_dir.name}")
+            domain_module = importlib.import_module(f"app.domain.{domain_dir.name}")
             if hasattr(domain_module, "router"):
                 routers.append(domain_module.router)
         except ImportError:

@@ -2,6 +2,6 @@
 model domain module.
 """
 
-from app.domains.model.api import router
+from app.domain.model.api import router
 
 __all__ = ["router"]

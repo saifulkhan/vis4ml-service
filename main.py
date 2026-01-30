@@ -34,6 +34,7 @@ def init_routers(app_: FastAPI) -> None:
 
     # Add all domain routers with versioning
     routers = get_available_domain_routers()
+    print("DISCOVERED ROUTERS:", routers)
     for router in routers:
         app_.include_router(router, prefix=config.api_base_path)
 

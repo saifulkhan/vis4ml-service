@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+from app.domain.data.api.alphabet import router as alphabet_router
 
 router = APIRouter(prefix="/data", tags=["Data"])
 
@@ -20,3 +21,5 @@ async def hello_world():
         ```
     """
     return {"message": "hello world from data api", "status": "success"}
+
+router.include_router(alphabet_router)
